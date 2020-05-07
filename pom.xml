@@ -88,6 +88,13 @@
             </exclusions>
         </dependency>
 
+        <!-- The Vaadin DSL integration -->
+        <dependency>
+            <groupId>com.github.mvysny.karibudsl</groupId>
+            <artifactId>karibu-dsl</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
         <!-- Added to provide logging output as Vaadin uses -->
         <!-- the unbound SLF4J no-operation (NOP) logger implementation -->
         <dependency>
