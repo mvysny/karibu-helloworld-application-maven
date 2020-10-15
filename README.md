@@ -1,4 +1,6 @@
-# Skeleton Starter for Vaadin
+# Hello, Vaadin 👋
+
+A simple "Hello, World" application in Vaadin and Kotlin.
 
 This project can be used as a starting point to create your own Vaadin application.
 It has the necessary dependencies and files to help you get started.
