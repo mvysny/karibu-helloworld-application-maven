@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <vaadin.version>14.4.0</vaadin.version>
+        <vaadin.version>14.4.2</vaadin.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
         <kotlin.version>1.4.10</kotlin.version>
