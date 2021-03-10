@@ -15,10 +15,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <vaadin.version>14.4.7</vaadin.version>
+        <vaadin.version>14.4.8</vaadin.version>
         <jetty.version>9.4.36.v20210114</jetty.version>
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
-        <kotlin.version>1.4.30</kotlin.version>
+        <kotlin.version>1.4.31</kotlin.version>
     </properties>
 
     <repositories>
