@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <vaadin.version>14.6.7</vaadin.version>
+        <vaadin.version>14.6.8</vaadin.version>
         <jetty.version>9.4.43.v20210629</jetty.version>
         <junit.jupiter.version>5.7.2</junit.jupiter.version>
         <kotlin.version>1.5.21</kotlin.version>
@@ -119,7 +119,7 @@
         <dependency>
             <groupId>com.github.mvysny.kaributesting</groupId>
             <artifactId>karibu-testing-v10</artifactId>
-            <version>1.3.0</version>
+            <version>1.3.1</version>
             <scope>test</scope>
         </dependency>
         <!-- I have no idea why but Maven pulls in Kotlin 1.3.72 instead of 1.4.0 -->
