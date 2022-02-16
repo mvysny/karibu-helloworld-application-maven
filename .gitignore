@@ -21,3 +21,5 @@ drivers/
 error-screenshots/
 
 webpack.generated.js
+.npmrc
+frontend/generated
