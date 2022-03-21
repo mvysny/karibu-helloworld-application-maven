@@ -143,6 +143,11 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
             </plugin>
+            <!-- upgrade war plugin to be compatible with java 17 -->
+            <plugin>
+		<artifactId>maven-war-plugin</artifactId>
+		<version>3.3.2</version>
+	    </plugin>
             <!-- Jetty plugin for easy testing without a server -->
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
