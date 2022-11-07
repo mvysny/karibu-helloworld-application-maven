@@ -13,6 +13,10 @@ the IDE of your choice as a Maven project. You need to have Java 11 installed.
 > Note: this example project uses Maven. For Gradle-based example project please visit
 > [karibu10-helloworld-application](https://github.com/mvysny/karibu10-helloworld-application).
 
+## Online demo
+
+View the [online demo](https://v-herd.eu/karibu10-helloworld-application-maven/).
+
 # Preparing Environment
 
 # Documentation
