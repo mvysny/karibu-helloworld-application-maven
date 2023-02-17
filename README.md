@@ -11,7 +11,7 @@ To access it directly from github, clone the repository and import the project t
 the IDE of your choice as a Maven project. You need to have Java 11 installed.
 
 > Note: this example project uses Maven. For Gradle-based example project please visit
-> [karibu10-helloworld-application](https://github.com/mvysny/karibu-helloworld-application).
+> [karibu-helloworld-application](https://github.com/mvysny/karibu-helloworld-application).
 
 ## Online demo
 
