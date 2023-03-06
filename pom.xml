@@ -55,8 +55,8 @@
         <!-- The Vaadin DSL integration -->
         <dependency>
             <groupId>com.github.mvysny.karibudsl</groupId>
-            <artifactId>karibu-dsl</artifactId>
-            <version>1.1.3</version>
+            <artifactId>karibu-dsl-v23</artifactId>
+            <version>1.2.0</version>
         </dependency>
 
         <!-- Vaadin Boot which runs Vaadin apps from main() function easily: https://github.com/mvysny/vaadin-boot -->
