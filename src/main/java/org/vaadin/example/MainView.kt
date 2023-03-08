@@ -19,19 +19,14 @@ import com.github.mvysny.karibudsl.v10.*
 import com.github.mvysny.kaributools.setPrimary
 import com.vaadin.flow.component.Key
 import com.vaadin.flow.component.button.Button
-import com.vaadin.flow.component.dependency.CssImport
 import com.vaadin.flow.component.notification.Notification
-import com.vaadin.flow.component.page.AppShellConfigurator
 import com.vaadin.flow.component.textfield.TextField
 import com.vaadin.flow.router.Route
-import com.vaadin.flow.server.PWA
 
 /**
  * The main view contains a button and a click listener.
  */
 @Route("")
-@CssImport("./styles/shared-styles.css")
-@CssImport(value = "./styles/vaadin-text-field-styles.css", themeFor = "vaadin-text-field")
 class MainView : KComposite() {
     private lateinit var nameField: TextField
     private lateinit var greetButton: Button
@@ -43,7 +38,9 @@ class MainView : KComposite() {
             addClassName("centered-content")
 
             // Use TextField for standard text input
-            nameField = textField("Your name")
+            nameField = textField("Your name") {
+                addClassName("bordered")
+            }
 
             // Use Button for a clickable button
             greetButton = button("Say hello") {
@@ -63,5 +60,3 @@ class MainView : KComposite() {
     }
 }
 
-@PWA(name = "Project Base for Vaadin", shortName = "Project Base")
-class AppShell: AppShellConfigurator
