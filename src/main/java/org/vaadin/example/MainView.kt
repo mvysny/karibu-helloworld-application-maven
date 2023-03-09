@@ -34,7 +34,7 @@ class MainView : KComposite() {
     // The main view UI definition
     private val root = ui {
         verticalLayout {
-            // Use custom CSS classes to apply styling. This is defined in shared-styles.css.
+            // Use custom CSS classes to apply styling. This is defined in styles.css.
             addClassName("centered-content")
 
             // Use TextField for standard text input
