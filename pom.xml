@@ -14,9 +14,9 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <vaadin.version>24.0.0</vaadin.version>
+        <vaadin.version>24.0.3</vaadin.version>
         <junit.jupiter.version>5.9.2</junit.jupiter.version>
-        <kotlin.version>1.8.0</kotlin.version>
+        <kotlin.version>1.8.20</kotlin.version>
     </properties>
 
     <repositories>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>com.github.mvysny.vaadin-boot</groupId>
             <artifactId>vaadin-boot</artifactId>
-            <version>11.1</version>
+            <version>11.2</version>
         </dependency>
 
         <!-- Added to provide logging output as Vaadin uses -->
@@ -88,7 +88,7 @@
         </dependency>
         <dependency>
             <groupId>com.github.mvysny.kaributesting</groupId>
-            <artifactId>karibu-testing-v10</artifactId>
+            <artifactId>karibu-testing-v23</artifactId>
             <version>2.0.2</version>
             <scope>test</scope>
         </dependency>
