@@ -14,7 +14,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <vaadin.version>24.1.6</vaadin.version>
+        <vaadin.version>24.1.12</vaadin.version>
         <junit.jupiter.version>5.9.3</junit.jupiter.version>
         <kotlin.version>1.9.10</kotlin.version>
     </properties>
@@ -69,7 +69,7 @@
         <dependency>
             <groupId>com.github.mvysny.vaadin-boot</groupId>
             <artifactId>vaadin-boot</artifactId>
-            <version>12.0</version>
+            <version>12.1</version>
         </dependency>
 
         <!-- Added to provide logging output as Vaadin uses -->
