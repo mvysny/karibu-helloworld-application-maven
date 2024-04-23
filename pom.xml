@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <vaadin.version>24.3.8</vaadin.version>
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
-        <kotlin.version>1.9.22</kotlin.version>
+        <kotlin.version>1.9.23</kotlin.version>
     </properties>
 
     <repositories>
