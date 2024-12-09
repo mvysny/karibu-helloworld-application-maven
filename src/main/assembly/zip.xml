@@ -4,17 +4,13 @@
     <id>zip</id>
     <formats>
         <format>zip</format>
+        <format>tar.gz</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
-    <dependencySets>
-        <dependencySet>
-            <outputDirectory>libs</outputDirectory>
-        </dependencySet>
-    </dependencySets>
     <fileSets>
         <fileSet>
-            <directory>src/main/scripts</directory>
-            <outputDirectory></outputDirectory>
+            <directory>target/appassembler</directory>
+            <outputDirectory>/</outputDirectory>
             <fileMode>0755</fileMode>
         </fileSet>
     </fileSets>
