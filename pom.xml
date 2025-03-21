@@ -14,9 +14,9 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <vaadin.version>24.6.4</vaadin.version>
+        <vaadin.version>24.7.0</vaadin.version>
         <junit.jupiter.version>5.11.0</junit.jupiter.version>
-        <kotlin.version>2.1.10</kotlin.version>
+        <kotlin.version>2.1.20</kotlin.version>
     </properties>
 
     <repositories>
