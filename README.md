@@ -1,6 +1,6 @@
 # Hello, Vaadin 👋
 
-A simple "Hello, World" application in Vaadin 24 and Kotlin.
+A simple "Hello, World" application in Vaadin and Kotlin.
 
 This project can be used as a starting point to create your own Vaadin application.
 It has the necessary dependencies and files to help you get started.
@@ -8,7 +8,7 @@ It has the necessary dependencies and files to help you get started.
 There is also a [getting started tutorial](https://vaadin.com/tutorials/getting-started-with-flow) based on this project.
 
 To access it directly from github, clone the repository and import the project to
-the IDE of your choice as a Maven project. You need to have Java 17+ installed.
+the IDE of your choice as a Maven project. You need to have Java 21+ installed.
 
 > Note: this example project uses Maven. For Gradle-based example project please visit
 > [karibu-helloworld-application](https://github.com/mvysny/karibu-helloworld-application).
@@ -16,8 +16,6 @@ the IDE of your choice as a Maven project. You need to have Java 17+ installed.
 ## Online demo
 
 View the [online demo](https://v-herd.eu/karibu-helloworld-application-maven/).
-
-# Preparing Environment
 
 # Documentation
 
