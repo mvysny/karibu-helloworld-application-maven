@@ -10,7 +10,7 @@
 FROM eclipse-temurin:21 AS builder
 COPY . /app/
 WORKDIR /app/
-RUN --mount=type=cache,target=/root/.m2 --mount=type=cache,target=/root/.vaadin ./mvnw -C -e clean package -Pproduction
+RUN --mount=type=cache,target=/root/.m2 --mount=type=cache,target=/root/.vaadin ./mvnw -C -e clean package
 WORKDIR /app/target/
 RUN mkdir app && tar xvzf *.tar.gz -C app
 # At this point, we have the app (executable bash scrip plus a bunch of jars) in the
