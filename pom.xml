@@ -113,6 +113,22 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>org.vaadin.example.MainKt</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
             <!-- needs to be before vaadin-maven-plugin: https://github.com/vaadin/flow/issues/20246 -->
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -139,7 +155,6 @@
                 </configuration>
             </plugin>
 
-            <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.1</version>
@@ -170,13 +185,8 @@
             <!-- creates the "zip" distribution out of the app that appassembler produced -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.7.1</version>
                 <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.vaadin.starter.skeleton.Main</mainClass>
-                        </manifest>
-                    </archive>
                     <descriptors>
                         <descriptor>src/main/assembly/zip.xml</descriptor>
                     </descriptors>
