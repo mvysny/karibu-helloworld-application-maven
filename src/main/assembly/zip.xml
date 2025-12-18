@@ -7,13 +7,6 @@
         <format>tar.gz</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
-  <!-- Include your project JAR in the root -->
-    <files>
-        <file>
-            <source>${project.build.directory}/${project.artifactId}-${project.version}.jar</source>
-            <outputDirectory>/</outputDirectory>
-        </file>
-    </files>
     <!-- Include scripts in bin/ and make them executable -->
     <fileSets>
         <fileSet>
@@ -22,13 +15,11 @@
             <fileMode>0755</fileMode> <!-- Executable permissions -->
         </fileSet>
     </fileSets>
-   <!-- Copy dependencies to lib/, excluding optional ones -->
+   <!-- Copy dependencies to lib/, excluding vaadin-dev ones -->
     <dependencySets>
         <dependencySet>
             <outputDirectory>lib</outputDirectory>
-            <useProjectArtifact>false</useProjectArtifact>
             <unpack>false</unpack>
-            <scope>runtime</scope>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <excludes>
                 <exclude>com.vaadin:vaadin-dev</exclude>
