@@ -160,28 +160,6 @@
                 <version>3.3.1</version>
             </plugin>
 
-            <!-- creates an executable app -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>appassembler-maven-plugin</artifactId>
-                <version>2.1.0</version>
-                <configuration>
-                    <programs>
-                        <program>
-                            <mainClass>org.vaadin.example.MainKt</mainClass>
-                            <name>app</name>
-                        </program>
-                    </programs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>assemble</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <!-- creates the "zip" distribution out of the app that appassembler produced -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>

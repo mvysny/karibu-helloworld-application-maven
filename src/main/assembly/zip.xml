@@ -7,11 +7,31 @@
         <format>tar.gz</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
+  <!-- Include your project JAR in the root -->
+    <files>
+        <file>
+            <source>${project.build.directory}/${project.artifactId}-${project.version}.jar</source>
+            <outputDirectory>/</outputDirectory>
+        </file>
+    </files>
+    <!-- Include scripts in bin/ and make them executable -->
     <fileSets>
         <fileSet>
-            <directory>target/appassembler</directory>
-            <outputDirectory>/</outputDirectory>
-            <fileMode>0755</fileMode>
+            <directory>${project.basedir}/src/main/scripts</directory> <!-- Where your script templates are -->
+            <outputDirectory>bin</outputDirectory>
+            <fileMode>0755</fileMode> <!-- Executable permissions -->
         </fileSet>
     </fileSets>
+   <!-- Copy dependencies to lib/, excluding optional ones -->
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+            <unpack>false</unpack>
+            <scope>runtime</scope>
+            <excludes>
+                <exclude>com.vaadin:vaadin-dev</exclude>
+            </excludes>
+        </dependencySet>
+    </dependencySets> 
 </assembly>
