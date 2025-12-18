@@ -29,6 +29,7 @@
             <useProjectArtifact>false</useProjectArtifact>
             <unpack>false</unpack>
             <scope>runtime</scope>
+            <useTransitiveFiltering>true</useTransitiveFiltering>
             <excludes>
                 <exclude>com.vaadin:vaadin-dev</exclude>
             </excludes>
