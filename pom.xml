@@ -70,6 +70,20 @@
             <version>13.7</version>
         </dependency>
 
+        <!-- vaadin-bom manages jakarta.servlet-api to `provided` scope, which is correct when
+             deploying a WAR into a servlet container that already supplies the API. We embed
+             Jetty via Vaadin Boot instead, so the app must ship the servlet API itself: without
+             this override the jar is missing from lib/ in the zip/tar.gz distribution (and from
+             the exec:java runtime classpath) and startup dies with
+             NoClassDefFoundError: jakarta/servlet/ServletContext.
+             The scope must be stated explicitly - a bare declaration would inherit `provided`
+             from the managed entry. Version still comes from vaadin-bom. -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- Added to provide logging output as Vaadin uses -->
         <!-- the unbound SLF4J no-operation (NOP) logger implementation -->
         <dependency>

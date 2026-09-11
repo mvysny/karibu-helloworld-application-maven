@@ -47,6 +47,12 @@ Read the `cop` skill (`~/.claude/skills/cop/SKILL.md`) before designing componen
   Dockerfile entrypoint. Renaming `Main.kt` breaks all of them.
 - **`src/main/frontend/generated/` is generated and gitignored**; `src/main/bundles/prod.bundle` is committed on purpose
   (the pre-built production bundle lets most builds skip npm entirely).
+- **`jakarta.servlet-api` is declared explicitly with `<scope>compile</scope>`, and must stay that way.** `vaadin-bom`
+  manages it to `provided` — right for a WAR, wrong here: Vaadin Boot embeds Jetty, so the app has to ship the servlet
+  API itself. Without the override the jar is absent from `lib/` in the zip/tar.gz *and* from the `exec:java` classpath,
+  and startup dies with `NoClassDefFoundError: jakarta/servlet/ServletContext`. The scope must be written out — a bare
+  declaration inherits the managed `provided`. The Gradle twin needs no equivalent: Gradle platforms carry versions
+  only, never scopes.
 - **There is no `production` profile** even though CI passes `-Pproduction`. `vaadin-maven-plugin:build-frontend` is bound
   unconditionally, so *every* `package`/`install` is a production build; the flag is a harmless no-op left over from the
   Vaadin starter. Maven prints a warning about it.
